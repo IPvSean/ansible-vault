@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Show the secret variables
+      debug:
+        msg:
+          - "The DB password is {{ db_password }}”
+          - “The API key is {{ api_key }}"
+
