@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   tasks:
+    - include_vars: secret.yml
     - name: Show the secret variables
       debug:
         msg:
